@@ -1,0 +1,11 @@
+<aura:component>
+    <aura:handler event="c:events" action="{!c.setPalabra}" />
+    <div id="palabraCheck" style="display: none"></div>
+    <div id="intentos" style="display: none">6</div>
+    <div id="jugar" style="display: none">true</div>
+
+    <input type="text" aura:id="palabra" placeholder="Ingrese una palabra..." maxlength="5" />
+    <input type="button" onclick="{!c.comparar}" value="Comprobar" />
+    <div class="resultado">Palabra usada: <br/>
+    </div>
+</aura:component>

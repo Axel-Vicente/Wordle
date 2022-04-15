@@ -1,0 +1,4 @@
+<aura:component controller="ControllerApex">
+    <h1 style="font-size: 100px;"><strong>WORDLE CHANO</strong></h1><br/>
+    <input type="button" onclick="{!c.generateWord}" value="Generar palabra" />
+</aura:component>
