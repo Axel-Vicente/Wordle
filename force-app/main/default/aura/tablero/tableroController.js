@@ -15,6 +15,8 @@
         if (jugar == "true") {
             if (palabra == palabraCorrecta) {
                 alert("Palabra correcta");
+                div.innerHTML += "<span style='background-color: #00FF00;'>" + palabraCorrecta + "</span></br>";
+                div.innerHTML += "<span style='background-color: black;'>---------------------------------------------------------</span><br/>";
             } else {
                 console.log("Palabra incorrecta");
                 listaPalabra.forEach(function(element, index) {
@@ -35,6 +37,7 @@
                 if (intentos == 0) {
                     alert("Perdiste");
                     document.getElementById("jugar").innerHTML = "false";
+                    div.innerHTML += "<span style='background-color: #00FF00;'>" + palabraCorrecta + "</span></br>";
                     div.innerHTML += "<span style='background-color: black;'>---------------------------------------------------------</span><br/>";
                 }
             }

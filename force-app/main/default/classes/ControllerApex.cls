@@ -5,9 +5,13 @@ public with sharing class ControllerApex {
             List<String> palabrasJuego = new List<String>();
             palabrasJuego.add('Casa');
             palabrasJuego.add('Coche');
-            palabrasJuego.add('Hola');
+            palabrasJuego.add('Pista');
+            palabrasJuego.add('Exodo');
             palabrasJuego.add('Moto');
             palabrasJuego.add('Perro');
+            palabrasJuego.add('Covid');
+            palabrasJuego.add('Mujer');
+            palabrasJuego.add('Pana');
 
             String palabraCorrecta = '';
             palabraCorrecta = palabrasJuego[(Integer)Math.floor(Math.random() * palabrasJuego.size())];
